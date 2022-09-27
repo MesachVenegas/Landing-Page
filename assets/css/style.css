@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 :root{
     --pink : hsl(322, 100%, 66%);
@@ -32,7 +32,7 @@ img{
 
 body{
     font-family: var(--open-sans);
-    font-weight:200;
+    font-weight:300;
 }
 
 .header{
@@ -60,7 +60,8 @@ body{
 
 .navbar--btn{
     background-color: white;
-    border: 1px solid #333;
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgba(3,3,3, .2);
 }
 
 
@@ -105,7 +106,7 @@ body{
     display: flex;
     flex-direction: column-reverse;
     border-radius: .5rem;
-    padding: 2rem;
+    padding: 1.5rem;
     margin: 2rem;
     box-shadow: 2px 4px 2px 4px rgba(3, 3, 3, .1);
     justify-content: center;
@@ -114,7 +115,7 @@ body{
 
 .card--img{
     max-width: 100%;
-    max-width: 350px;
+    max-width: 300px;
     padding: 1.5rem;
 }
 
@@ -149,10 +150,39 @@ body{
     }
 }
 
-@media screen and(min-width:992px) {
+@media screen and (min-width:992px) {
+    .header{
+        background-image: url('../images/bg-hero-desktop.svg');
+    }
     .header--text,
     .header--title{
         max-width: 400px;
     }
 
+    .main--card{
+        display: flex;
+    }
+
+    .card--title{
+        display: flex;
+        font-size: 1.5rem;
+    }
+
+    .card--text{
+        display: flex;
+        text-align: left;
+        max-width: 450px;
+    }
+
+    .card--img{
+        max-width: 400px;
+    }
+
+    .main--card__left{
+        flex-direction: row;
+    }
+
+    .main--card__right{
+        flex-direction: row-reverse;
+    }
 }
