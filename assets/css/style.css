@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&display=swap');
 
 :root{
@@ -31,11 +31,12 @@ img{
 }
 
 body{
-    font-family: var(--open-sans)
+    font-family: var(--open-sans);
+    font-weight:200;
 }
 
 .header{
-    background-image: url("../assets/images/bg-hero-mobile.svg");
+    background-image: url('../images/bg-hero-mobile.svg');
     background-color: var(--pale-cyan);
 }
 
@@ -90,4 +91,68 @@ body{
     border: none;
     width: 75%;
     margin-bottom: 1rem;
+    max-width: 300px;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main--card{
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: .5rem;
+    padding: 2rem;
+    margin: 2rem;
+    box-shadow: 2px 4px 2px 4px rgba(3, 3, 3, .1);
+    justify-content: center;
+    align-items: center;
+}
+
+.card--img{
+    max-width: 100%;
+    max-width: 350px;
+    padding: 1.5rem;
+}
+
+.card--content{
+    width: 100%;
+}
+.card--title{
+    padding: 1rem;
+    text-align: center;
+}
+
+.card--text{
+    padding: 1rem;
+    text-align: center;
+}
+
+@media screen and (min-width:768px) {
+    .header--information{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+        gap: 1.5rem;
+    }
+
+    .header--title{
+        font-size: 2rem;
+    }
+
+    .header--img{
+        max-width: 400px;;
+    }
+}
+
+@media screen and(min-width:992px) {
+    .header--text,
+    .header--title{
+        max-width: 400px;
+    }
+
 }
