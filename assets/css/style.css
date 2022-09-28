@@ -57,10 +57,28 @@ body{
 .section{
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin: 2rem;
     padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 2px 4px 2px 4px rgba(3, 3, 3, .2);
+}
+.section--getstar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
 }
 
+.section--title{
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer{
+    background-color: var(--dark-cyan);
+    color: #FFF;
+}
 .navbar--logo{
     width: 100px;
 }
@@ -137,29 +155,6 @@ body{
 .card--text{
     padding: 1rem;
     text-align: center;
-}
-
-.section--getstar{
-    padding: 2rem;
-    border-radius: 1rem;
-    text-align: center;
-    box-shadow: 2px 4px 2px 4px rgba(3, 3, 3, .1);
-}
-
-.section--title{
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
-.footer{
-    background-color: var(--dark-cyan);
-    color: #FFF;
-    display: flex;
-    flex-direction: column;
-}
-
-.foot--img{
-    
 }
 
 @media screen and (min-width:768px) {
