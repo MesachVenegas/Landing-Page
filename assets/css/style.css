@@ -343,7 +343,8 @@ body{
     }
 
     .foot--group{
-        margin-right: 5rem;
+        width: auto;
+        margin-right: 2rem;
     }
 
     .three{
